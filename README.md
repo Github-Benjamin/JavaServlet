@@ -6,7 +6,7 @@
 # 开发语言 Java
 
 
-# 构成技术 JavaServlet+JSP+Tomcat
+# 开发语言 Java Servlet + JSP
 
 
 # 开发工具 IDEA
