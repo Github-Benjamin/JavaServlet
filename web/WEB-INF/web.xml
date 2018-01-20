@@ -4,16 +4,44 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
+    <!--&lt;!&ndash;公共参数ServletContext定义初始化参数&ndash;&gt;-->
+    <!--<context-param>-->
+        <!--<param-name>appName</param-name>-->
+        <!--<param-value>JSP企业开发实战</param-value>-->
+    <!--</context-param>-->
 
-    <!--方法一-->
+    <!--&lt;!&ndash;设置session有效期，一般默认为30分钟&ndash;&gt;-->
+    <!--<session-config>-->
+        <!--<session-timeout>20</session-timeout>-->
+    <!--</session-config>-->
+
+    <!--&lt;!&ndash;方法一&ndash;&gt;-->
     <!--<servlet>-->
         <!--<servlet-name>HelloWorld</servlet-name>-->
         <!--<servlet-class>HelloWorld</servlet-class>-->
+
+        <!--&lt;!&ndash;单项配置ServletConfig定义初始化参数&ndash;&gt;-->
+        <!--<init-param>-->
+            <!--&lt;!&ndash;参数名，参数值&ndash;&gt;-->
+            <!--<param-name>encoding</param-name>-->
+            <!--<param-value>utf-8</param-value>-->
+        <!--</init-param>-->
+
     <!--</servlet>-->
 
     <!--<servlet-mapping>-->
         <!--<servlet-name>HelloWorld</servlet-name>-->
         <!--<url-pattern>/HelloWorld</url-pattern>-->
+    <!--</servlet-mapping>-->
+
+
+    <!--<servlet>-->
+        <!--<servlet-name>CheckAccount</servlet-name>-->
+        <!--<servlet-class>com.login.servlet.CheckAccount</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>CheckAccount</servlet-name>-->
+        <!--<url-pattern>/login</url-pattern>-->
     <!--</servlet-mapping>-->
 
 
